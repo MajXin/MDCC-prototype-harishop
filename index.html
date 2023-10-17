@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>IEEE MIET | Jammu student branch</title>
+        <link rel="stylesheet" href="./main.css">
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato&family=Nunito:wght@200;300;400&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/f7187ce1e1.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="body-container">
+            <!-- Navigation -->
+            <header>
+                <img src="./src/logo.png">
+                <nav>
+                    <div class="nav-links">
+                        <a id="curr-page" href="./index.html">Home</a>
+                        <a href="./about.html">About Us</a>
+                        <a href="./about.html">Gallery</a>
+                        <a href="./about.html">Events</a>
+                        <a href="./about.html">Dashboard</a>
+                        <a href="./team/index.html">Team</a>
+                    </div>
+                </nav>
+            </header>
+            
+            <!-- Wallpaper -->
+            <div class="wall-top-container">
+                <img id="wall-top" src="./src/wall-home.png">
+            </div>
+
+            <!-- Dashboard -->
+            <div class="dashboard">
+                <div id="dashboard-item">
+                    <H1>300 +</H1>
+                    <p>Members</p>
+                </div>
+                <hr width="20vw">
+                <div id="dashboard-item">
+                    <H1>20</H1>
+                    <p>Core Team Members</p>
+                </div>
+            </div>
+        
+
+            <!-- About Us -->
+            <div class="about-us">
+                <div class="about-us-container">
+                    <p id="heading">About IEEE MIET Student Branch</p>
+                    <p id="content">IEEE is the world's largest professional association advancing innovation and technological
+                        excellence for the benefit of humanity. IEEE and its members inspire a global community to innovate for
+                        a better tomorrow through its highly-cited publications, conferences, technology standards, and professional
+                        and educational activities. IEEE is the trusted "voice" for engineering, computing and technology
+                        information around the globe.</p>
+                </div>
+            </div>
+
+            <!-- Event Section -->
+            <div class="events-section">
+                <p id="headding"><span>Current Events</span></p>
+                <center><hr></center>
+                <div class="event-per-item fade">
+                    <div class="event-item">
+                        <a href="https://www.instagram.com/ieee_mietjammu" target="_blank"><img src="src/events/1.webp"></a>
+                    </div>
+                    <div class="event-item fade">
+                        <a href="https://www.instagram.com/ieee_mietjammu" target="_blank"><img src="src/events/2.webp"></a>
+                    </div>
+                    <div class="event-item fade">
+                        <a href="https://www.instagram.com/ieee_mietjammu" target="_blank"><img src="src/events/3.webp"></a>
+                    </div>
+                    <div class="event-item fade">
+                        <a href="https://www.instagram.com/ieee_mietjammu" target="_blank"><img src="src/events/4.webp"></a>
+                    </div>
+                    <div class="event-item fade">
+                        <a href="https://www.instagram.com/ieee_mietjammu" target="_blank"><img src="src/events/5.webp"></a>
+                    </div>
+                    <p id="event-counter"></p>
+                    <div class="event-button">
+                        <button id="event-button-left" onclick="nextEvent(-1)">&#10094;</button>
+                        <button id="event-button-right" onclick="nextEvent(1)">&#10095;</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Footer -->
+            <hr> <!-- Contrast ^-^ -->
+            <footer>
+                <div class="footer-container">
+                        <div class="footer-left">
+                            <img src="./src/logo.png">
+                            <div id="socialmedia-icons">
+                                <a href="https://www.linkedin.com/ieee_miet"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="https://www.instagram.com/ieee_miet/"><i class="fab fa-instagram"></i></a>
+                                <a href="iee.sb@mietjammu.in"><i class="fas fa-inbox"></i></a>
+                            </div>
+                        </div>
+
+
+                    <!-- Footer Navigation Links -->
+                    <div class="footer-right">
+                        <div class="footer-links">
+                            <p id="headding">Navigate</p>
+                            <ul>
+                                <a href="./about.html"><i class="fas fa-angle-right"></i> About Us</a>
+                                <a href="./about.html"><i class="fas fa-angle-right"></i> Gallery</a>
+                                <a href="./about.html"><i class="fas fa-angle-right"></i> Events</a>
+                                <a href="./about.html"><i class="fas fa-angle-right"></i> Dashboard</a>
+                                <a href="./Team"><i class="fas fa-angle-right"></i> Team</a>
+                        </div>
+                        <!-- Footer Navigation Links -->
+                        <div class="footer-links">
+                            <p id="headding">IEEE weblinks</p>
+                            <ul>
+                                <a href="./about.html"><i class="fas fa-angle-right"></i> IEEE website</a>
+                                <a href="./about.html"><i class="fas fa-angle-right"></i> IEEE Xplore</a>
+                                <a href="./about.html"><i class="fas fa-angle-right"></i> IEEE Collaborate</a>
+                                <a href="./about.html"><i class="fas fa-angle-right"></i> IEEE Spectrum</a>
+                        </div>
+
+                        <div class="footer-links">
+                            <p id="headding">Contact Us</p>
+                                <span>Contact No: +91 94697132</span>
+                                <span>Kot Balwal, Jammu</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer End -->
+                <div class="footer-end">
+                    <p>Made with <i class="fas fa-wine-bottle"></i><i class="fas fa-wine-glass-alt"></i> in the city of temples.</p>
+                    <a href="#top"><i class="fas fa-arrow-up"></i> To the Top again!</a>
+                </div>
+            </footer>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
