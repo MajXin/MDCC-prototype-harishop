@@ -24,7 +24,8 @@ header {
 }
 
 header img {
-    width: 15vh;
+    width: 8vw;
+    min-width: 100px;
 }
 
 header img:hover {
@@ -68,12 +69,57 @@ header .nav-links a:hover {
 }
 
 .wall-top-container {
+    display: flex;
+    justify-content: center;
     overflow: hidden;
     z-index: -1;
-    width: 98vw;
+    width: 100%;
+    height: calc(100vh - 10vh);
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+}
+@keyframes relax-out {
+    from {letter-spacing: 1em;}
+    to {letter-spacing: 0em;}
 }
 
-#wall-top {
+.wall-top-container #headding {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    z-index: 1;
+    position: absolute;
+    top: calc((100vh - 10vh - 50px)/2);
+    color: #4E596B;
+    font-family: 'Loto', sans-serif;
+    font-weight: bold;
+    text-shadow: 0 1px 5px #444e5f;
+    font-size: 100px;
+    line-height: -10rem;
+    animation: relax-out 0.9s;
+    animation-delay: 0.2s;
+}
+
+@keyframes up-to-down {
+    0% {margin-top: -100px; opacity: 0;}
+    80% {margin-top: -50px; opacity: 0; }
+    100% {margin-top: 0px; opacity: 1;}
+}
+
+.wall-top-container #headding span {
+    font-size: 30px;
+    border: solid;
+    border-width: 2px 0 0 0;
+    font-family: 'Caveat', cursive;
+    padding: 10px;
+    animation: up-to-down 0.8s;
+}
+
+.wall-top-container #wall-top {
     width: 100%;
 }
 
@@ -82,7 +128,7 @@ header .nav-links a:hover {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    height: 20vh;
+    padding: 10px 0;
     background-color: #505050;
     color: white;
 }
@@ -113,11 +159,11 @@ header .nav-links a:hover {
 /** About Us **/
 .about-us {
     display: flex;
-    text-align: center;
-    height: 60vh;
-    align-content: center;
-    align-items: center;
+    flex-direction: column;
+    padding: 10vh 0;
+    min-height: 40vh;
     justify-content: center;
+    text-align: center;
     background-color: #f1f1f1;
 }
 
@@ -127,9 +173,9 @@ header .nav-links a:hover {
 }
 
 .about-us #content {
-    margin-top: 5vh;
+
+    margin: 5vh 10vw 0 10vw;
     font-family: 'Nunito', sans-serif;
-    width: 60vw;
     font-size: 18px;
     color: #555555;
 }
@@ -170,6 +216,7 @@ header .nav-links a:hover {
 .events-section .event-item {
     display: none;
     border: solid 0;
+    height: 80vh;
 }
 
 .events-section .event-item img {
@@ -380,6 +427,7 @@ footer .footer-end a {
     width: auto;
     overflow: hidden;
 }
+
 
 .team-bulk .team-container #member-container {
     padding: 20px 0;
