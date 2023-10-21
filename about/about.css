@@ -1,13 +1,91 @@
 body {
-	background-image: url("src/wall.jpg");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-attachment: fixed;
-	background-size:100%;
 }
 
 header {
 	background-color:white;
+}
+
+
+/** About Us **/
+.about-us {
+	background-color: white;
+    min-height: 100vh;
+	justify-content: space-around;
+}
+
+.about-us #heading1 {
+	font-family: 'Nunito', sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+}
+.about-us #heading1 span {
+	display: none;
+	font-family: 'Nunito', sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+}
+.about-us #heading1:hover span {
+	display: inline;
+	font-weight: 300;
+	animation: spread-slow 0.9s;
+	animation-direction: alternate;
+}
+@keyframes spread-slow {
+	0% {letter-spacing: -0.5em; opacity: 0;}
+	20%{opacity: 0.1;}
+	100% {letter-spacing: 0em; }
+}
+
+.about-us span {
+	color: #0a70a3;
+}
+
+/** Benifits **/
+.benifits {
+	padding: 10vh 50px;
+	display: flex;
+	background-color: #f5f5f5;
+	flex-direction: column;
+}
+
+.benifits p {
+	margin: 10px 0;
+    font-family: 'Nunito', sans-serif;
+	font-weight: 300;
+	font-size: 30px;
+}
+.benifits p span {
+    font-family: 'Nunito', sans-serif;
+	font-weight: 300;
+	border: solid 2px #0a70a3;
+	margin: 0px;
+	padding: 0px;
+	border-width: 0 0 2px 0;
+}
+
+.benifits .benifits-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 40px;
+	gap: 20px;
+}
+
+.benifits .benifits-container #head {
+	font-size: 30px;
+	color: #0a70a3;
+}
+
+.benifits .benifits-container #body {
+	font-size: 20px;
+}
+
+.benifits .benifit-item {
+	border: solid 0px;
+	border-radius: 10px;
+	width: 300px;
+	font-size: 18px;
 }
 
 .wall-top-container {
