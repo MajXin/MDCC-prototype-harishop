@@ -1,0 +1,14 @@
+body {
+
+}
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding:  30px;
+}
+
+.gallery .image-container img {
+    max-width: 400px;
+    padding: 20px;
+}

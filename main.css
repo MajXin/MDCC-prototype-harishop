@@ -7,6 +7,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -14,12 +15,13 @@ body {
 }
 
 
+
 /** header **/
 header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 25px 50px;
+    padding: 25px 50px;
     align-items: center;
 }
 
@@ -47,34 +49,34 @@ header .nav-links a {
     font-size: 14px;
     transition: .9s;
 }
+header .nav-links a:hover {
+    animation: animate-underline 0.3s;
+    transition: 0.3s;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
 
 /* Current page */
 header .nav-links #curr-page {
     text-decoration: underline;
     text-underline-offset: 5px;
     padding: 5px 5px;
-    font-weight: bold;
+}
+.top-full-block {
+    height: 100vh;
 }
 
-header .nav-links a:hover {
-    animation: spaceout 0.3s;
-    transition: 0.3s;
-    text-decoration: underline;
-    text-underline-offset: 5px;
-}
 
-@keyframes spaceout {
-    0% {text-underline-offset: 1px;}
-    100% {text-underline-offset: 5px;}
-}
-
+/** Wallpaper **/
 .wall-top-container {
     display: flex;
     justify-content: center;
+    position: absolute;
+    top: 0px;
     overflow: hidden;
     z-index: -1;
     width: 100%;
-    height: calc(100vh - 10vh);
+    height: 100%;
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
     -khtml-user-select: none; /* Konqueror HTML */
@@ -82,55 +84,69 @@ header .nav-links a:hover {
     -ms-user-select: none; /* Internet Explorer/Edge */
     user-select: none;
 }
-@keyframes relax-out {
-    from {letter-spacing: 1em;}
-    to {letter-spacing: 0em;}
-}
-
-.wall-top-container #headding {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    z-index: 1;
-    position: absolute;
-    top: calc((100vh - 10vh - 50px)/2);
-    color: #4E596B;
-    font-family: 'Loto', sans-serif;
-    font-weight: bold;
-    text-shadow: 0 1px 5px #444e5f;
-    font-size: 100px;
-    line-height: -10rem;
-    animation: relax-out 0.9s;
-    animation-delay: 0.2s;
-}
-
-@keyframes up-to-down {
-    0% {margin-top: -100px; opacity: 0;}
-    80% {margin-top: -50px; opacity: 0; }
-    100% {margin-top: 0px; opacity: 1;}
-}
-
-.wall-top-container #headding span {
-    font-size: 30px;
-    border: solid;
-    border-width: 2px 0 0 0;
-    font-family: 'Caveat', cursive;
-    padding: 10px;
-    animation: up-to-down 0.8s;
-}
 
 .wall-top-container #wall-top {
+    object-fit: cover;
     width: 100%;
 }
 
+/** IEEE x MIET **/
+.wall-top-container .headding {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    height: 130px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 100px;
+    font-weight: bold;
+    color: #0a70a3;
+    -webkit-filter: drop-shadow(0px 0px 15px #d4d4d4);
+    filter: drop-shadow(0px 0px 15px #d4d4d4);
+    transform: translateY(-50%);
+    z-index: 1;
+    overflow: hidden;
+}
+
+.wall-top-container .headding #ieeelogo {
+    height: 100%;
+    animation: right-to-left 1.5s;
+}
+
+.wall-top-container .ieeelogo-left {
+    display: flex;
+    flex-direction: column;
+    animation: left-to-right 1s;
+    height: 100%;
+}
+
+.wall-top-container .ieeelogo-left #head {
+    font-size: 100px;
+}
+.wall-top-container .ieeelogo-left #body {
+    position: relative;
+    display: inline;
+    font-size: 20px;
+    top: -20px;
+    color: #075981;
+    animation: up-to-down 1s;
+}
+.wall-top-container .ieeelogo-left #body #mietlogo {
+    height: 0.8em;
+}
+
+
+/** Dashboard **/
 .dashboard {
+    min-height: 30vh;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
     padding: 10px 0;
-    background-color: #505050;
-    color: white;
+    background-color: #ffffff;
+    color: #0a70a3;
 }
 
 .dashboard #dashboard-item {
@@ -144,11 +160,10 @@ header .nav-links a:hover {
 .dashboard #dashboard-item p {
     font-size: 25px;
     font-family: 'Nunito', sans-serif;
-    color: rgb(230, 230, 230);
+    color: #0e5f88;
 }
 
 .dashboard #dashboard-item H1 {
-    padding: 10px;
     width: 120px;
     font-family: 'Nunito', sans-serif;
     font-size: 40px;
@@ -161,7 +176,7 @@ header .nav-links a:hover {
     display: flex;
     flex-direction: column;
     padding: 10vh 0;
-    min-height: 40vh;
+    min-height: 50vh;
     justify-content: center;
     text-align: center;
     background-color: #f1f1f1;
@@ -170,6 +185,7 @@ header .nav-links a:hover {
 .about-us #heading {
     font-family: 'Nunito', sans-serif;
     font-size: 30px;
+    font-weight: 300;
 }
 
 .about-us #content {
@@ -181,13 +197,122 @@ header .nav-links a:hover {
 }
 
 
+/** IEEE Tools **/
+.ieee-tools {
+    margin: 10vh 50px;
+    display: block;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.ieee-tools #headding {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.ieee-tools .ieee-tools-bulk {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    width: 100%;
+}
+
+.ieee-tools .ieee-tool-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 10px;
+    width: 300px;
+    min-height: 250px;
+    height: auto;
+    border: solid 0px;
+    border-radius: 10px;
+    background-color: #f3f3f3;
+}
+.ieee-tools .ieee-tool-item:hover {
+    box-shadow: 0px 0px 5px #c7c7c7;
+    transition: 0.3s;
+}
+.ieee-tools .ieee-tool-item #imagecontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 150px;
+}
+
+.ieee-tools #imagecontainer img {
+    width: 50%;
+}
+
+.ieee-tools .ieee-tool-item p {
+    padding: 20px;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    color: #808080;
+}
+
+/** UpComing Events... **/
+.uc-event-section {
+    display: block;
+    margin: 10vh 50px;
+}
+
+.uc-event-section #headding {
+    font-size: 30px;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+}
+.uc-event-section #headding span {
+    color: #5db5bb;
+}
+
+.uc-event-section .uc-event-bulk {
+    margin-top: 40px;
+}
+
+.uc-event-section .uc-event-bulk p {
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+}
+
+.uc-event-section .uc-event-item {
+    background-color: #f5f5f5;
+    padding: 10px;
+    margin-top: 8px;
+    border: solid;
+    border-width: 0 0 0 1px;
+}
+
+
+.uc-event-section .uc-event-bulk #head {
+    font-size: 20px;
+    font-weight: 500;
+}
+.uc-event-section .uc-event-bulk #head span {
+    font-size: 18px;
+    color: #505050;
+    font-weight: 500;
+}
+
+.uc-event-section .uc-event-bulk #body {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+
 /** Event Section **/
 .events-section {
     display: block;
-    margin: 10vh 20px;
-    align-items: center;
-    align-content: center;
     text-align: center;
+    position: relative;
+    margin: 10vh 20px;
 }
 
 .events-section #headding {
@@ -229,13 +354,6 @@ header .nav-links a:hover {
     transition: 0.4s;
 }
 
-.events-section .event-per-item .event-button {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    top: calc( -1*( (80vh/2) + 100px ) ); /* imageHeight/2 - 25px*/
-}
 
 .events-section .event-per-item button {
     background-color: #ffffff;
@@ -246,6 +364,7 @@ header .nav-links a:hover {
     height: 50px;
     border-radius: 100px;
     cursor: pointer;
+    z-index: 99;
 }
 .events-section .event-per-item button:hover {
     background-color: #505050;
@@ -253,6 +372,20 @@ header .nav-links a:hover {
     opacity: 1;
     transition: 0.3s ease-in-out;
     padding: 10px;
+}
+
+.events-section #event-button-left {
+    position: absolute;
+    top:  50%;
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+.events-section #event-button-right {
+    position: absolute;
+    top:  50%;
+    right: 10px;
+    transform: translateY(-50%);
 }
 
 .events-section .event-per-item #event-counter {
@@ -365,8 +498,13 @@ footer .footer-end {
     font-size: 15px;
     height: 50px;
 }
+footer .footer-end #meetdev {
+    text-decoration: none;
+    color: black;
+}
 
-footer .footer-end a {
+
+footer .footer-end #tothetop {
     position: absolute;
     right: 20px;
     text-decoration: none;
@@ -375,81 +513,38 @@ footer .footer-end a {
 
 
 
-
-
-/****** team.html *******/
-.team-bulk {
-    display: block;
-}
-
-.team-bulk #heading {
-    animation: new 0.9s;
-    text-align: center;
-    font-size: 30px;
-    margin: 12vh 0vh;
-}
-@keyframes new {
- 0% {   letter-spacing: -2em;
-        opacity: 0.2;
-    }
- 40%{  letter-spacing: -0.5em;
-        opacity: 0.4;
-    }
- 100%{opacity: 1;}   
-}
-
-.team-bulk #heading span {
-    border: solid #0a66c2;
-    border-width: 0 0 2px 0;
-    padding: 2px;
-}
-
-.team-bulk hr {
-    position: relative;
-    top: calc(10vh + 18px); /* TopMargin + FontSize/2 */
-    width: 30%;
-    height:3px;
-    border-width:0;
-    background-color: #0a66c2;
-    z-index: -1;
-}
-
-.team-bulk .team-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-/** Card **/
-.team-bulk .team-container #member {
-    display: block;
-    /*box-shadow: 0 0 10px 0px #000000;*/
-    width: auto;
-    overflow: hidden;
-}
-
-
-.team-bulk .team-container #member-container {
-    padding: 20px 0;
-}
-
-.team-container #member img {
-    box-shadow:  #64435d;
-    border: solid 0px;
-    border-radius: 5px;
-    width: auto;
-    height: auto;
-    max-width: 200px;
-}
-
-
-
-
-
-/** Animations **/
+/*****************************
+        * Animations*
+ ****************************/
 @keyframes rotate-360 {
     from {transform: rotate(0deg);}
     to {transform: rotate(360deg);}
+}
+
+@keyframes animate-underline {
+    0% {text-underline-offset: 1px;}
+    100% {text-underline-offset: 5px;}
+}
+
+@keyframes relax-out {
+    from {letter-spacing: 1em;}
+    to {letter-spacing: 0em;}
+}
+
+@keyframes left-to-right {
+    0% {margin-left: -100px; opacity: 0;}
+    50%{margin-left: -50px; opacity: 0;}
+    100% {margin-left: 0px; opacity: 1;}
+}
+@keyframes right-to-left {
+    0% {margin-right: -100px; opacity: 0;}
+    100% {margin-right: 0px; opacity: 1;}
+}
+
+@keyframes animation-spread-out {
+ 0%  {letter-spacing: -2em; opacity: 0.2;}
+ 40% {letter-spacing: -0.5em; opacity: 0.4;}
+ 100%{opacity: 1;}
 }
 
 @keyframes fade {
