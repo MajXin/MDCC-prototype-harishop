@@ -1,0 +1,14 @@
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.contact-container #headding {
+    font-family: 'Tiro Devanagari Hindi', serif;
+    font-size: 200px;
+    font-weight: 300;
+    color: #dfdfdf;
+}
