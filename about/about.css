@@ -17,22 +17,21 @@ header {
 	font-family: 'Nunito', sans-serif;
     font-size: 30px;
     font-weight: 300;
+	color: #0a70a3;
 }
 .about-us #heading1 span {
-	display: none;
+	display: inline;
+	color: black;
 	font-family: 'Nunito', sans-serif;
     font-size: 30px;
-    font-weight: 300;
-}
-.about-us #heading1:hover span {
-	display: inline;
+	animation: spread-slow 1.4s;
 	font-weight: 300;
-	animation: spread-slow 0.9s;
-	animation-direction: alternate;
 }
+
 @keyframes spread-slow {
-	0% {letter-spacing: -0.5em; opacity: 0;}
-	20%{opacity: 0.1;}
+	0%   {display: none;}
+	40%  {display:none;letter-spacing: -0.5em; opacity: 0;}
+	50%  {opacity: 0.1;}
 	100% {letter-spacing: 0em; }
 }
 
