@@ -1,14 +1,38 @@
 body {
 
 }
+
+#heading {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+}
+
 .gallery {
+    display: block;
+    margin: 10vh 10vw;
+    
+}
+
+.gallery p {
+    font-size: 30px;
+}
+
+.gallery .gallery-bulk {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding:  30px;
+    gap: 20px;
+    margin: 5vh 0 15vh 0;
+}
+.gallery .image-container img {
+    max-width: 500px;
+    border: solid 1px #cccccc;
+    border-radius: 8px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
 }
 
-.gallery .image-container img {
-    max-width: 400px;
-    padding: 20px;
+.gallery .image-container img:hover {
+    filter: brightness(70%);
+    transform: scale(1.01);
 }

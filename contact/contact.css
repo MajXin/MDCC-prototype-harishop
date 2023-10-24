@@ -1,14 +1,96 @@
-.contact-container {
+/* Global */
+.body-container {
+    overflow: hidden;
+}
+
+#heading {
+    font-size: 40px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+}
+
+/* Moto of MIET */
+.heading-container {
+    overflow: hidden;
+    transition: all 1s ease-in-out;
+    animation: fade 2s;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     align-content: center;
+    flex-wrap: nowrap;
+    gap: 5vw;
+    width: 100vw;
+    height: 100vh;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
 }
 
-.contact-container #headding {
+.heading-container p {
     font-family: 'Tiro Devanagari Hindi', serif;
-    font-size: 200px;
-    font-weight: 300;
+    font-size: 25vw;
     color: #dfdfdf;
+    transition: 1s;
 }
+.heading-container p:hover {
+    color: black;
+}
+
+/* Contact */
+.contacts {
+    display: block;
+    text-align: center;
+    margin: 0 0 10vh 0;
+}
+.contacts i {
+    color: #0a70a3;
+}
+.contacts p {
+    font-family: 'Nunito', sans-serif;
+    margin: 10px;
+}
+.contacts p span {
+    color: #0a70a3;
+}
+/* Location */
+.location {
+    display: block;
+    text-align: center;
+    margin: 10vh 0;
+}
+.location p {
+    font-family: 'Nunito', sans-serif;
+}
+
+.location #google-maps p {
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+.location #google-maps p span {
+    color: green;
+    font-weight: bold;
+}
+.location #heading i {
+    color: #e97837;
+}
+
+.location iframe {
+    margin: 0 0 30px 0;
+    border: solid 1px #b1b1b1;
+    border-radius: 10px;
+    width: 50vw; 
+    height: 50vh;
+    transition: all 0.5s ease-in-out;
+}
+.location iframe:hover {
+    border-color: black;
+    width: 60vw;
+    height: 60vh;
+}
+
+
