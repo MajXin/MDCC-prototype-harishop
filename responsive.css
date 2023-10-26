@@ -13,11 +13,11 @@
     header input[type=checkbox]:checked ~ #headerfiller {
         display: initial;
         position: absolute;
-        bottom: 0px;
         top: 0px;
         right: 0px;
         left: 0px;
-        background-color: white;
+        height: 100vh;
+        background-color: beige;
         animation: fade 0.3s ease-in-out;
         z-index: -2;
     }
@@ -43,6 +43,7 @@
         width: 100%;
         display: block;
     }
+
     header nav .nav-links a{
         display: block;
         flex-direction: initial;
@@ -55,6 +56,13 @@
         font-weight: bold;
     }
 
+    header nav .nav-links #curr-page::after{
+        content: " <";
+    }
+
+    header nav .nav-links #curr-page::before{
+        content: "> ";
+    }
 }
 
     
