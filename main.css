@@ -430,6 +430,7 @@ footer {
 footer .footer-container {
     display: flex;
     flex-direction: row;
+    gap: 50px;
     justify-content: space-around;
     padding: 50px;
 }
@@ -484,6 +485,7 @@ footer #socialmedia-icons a:hover {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 20px;
     justify-content: space-between;
     width: 50vw;
 }
@@ -531,13 +533,19 @@ footer .footer-end #meetdev {
 }
 
 
-footer .footer-end #tothetop {
+#tothetop {
     position: absolute;
     right: 20px;
     text-decoration: none;
     color: #222222;
 }
-
+#tothetopmobile {
+    display: none;
+    position: absolute;
+    right: 20px;
+    text-decoration: none;
+    color: #222222;
+}
 
 #loading_indicator {
     position: absolute;
