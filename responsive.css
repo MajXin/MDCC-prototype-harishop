@@ -1,0 +1,57 @@
+/***************************************
+            index.html
+****************************************/
+@media screen and (max-width: 768px){
+    /* fixit */
+    header {
+        display: none;
+    }
+
+    .events {
+        margin: 10vh 0px;
+    }
+    .events .event-item {
+        display: ;
+    }
+
+    .events .event-item img {
+        max-width: none;
+        width: 100vw;
+        height: auto;
+    }
+    
+    .events .event-per-item button {
+        margin: 20px;
+    }
+    .events #event-button-left {
+        position: static;
+        top:  auto;
+        margin-top: 20px;
+        
+        left: 10px;
+        transform: translateY(-50%);
+    }
+    
+    .events #event-button-right {
+        position: static;
+        top: auto;
+        right: 10px;
+        transform: translateY(-50%);
+    }
+}
+
+
+/***************************************
+            index.html
+****************************************/
+@media screen and (max-width: 768px){
+    .global-view #mobile-view {
+        display: initial;
+    	width: 80vw;
+    	padding: 40px 0;
+    }
+
+    .global-view #wide-view {
+        display: none;
+    }
+}

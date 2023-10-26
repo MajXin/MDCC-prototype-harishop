@@ -332,18 +332,19 @@ header .nav-links #curr-page {
 
 
 /** Event Section **/
-.events-section {
+.events {
     display: block;
     text-align: center;
     position: relative;
     margin: 10vh 20px;
+    min-height: 80vh
 }
 
-.events-section #heading {
+.events #heading {
     display: flex;
     justify-content: center;
 }
-.events-section #heading span {
+.events #heading span {
     background-color: #ffffff;
     padding: 0 20px;
     font-size: 30px;
@@ -351,35 +352,31 @@ header .nav-links #curr-page {
     font-weight: 300;
 }
 
-.events-section hr {
+.events hr {
     position: relative;
     top: -18px;
-    width: 400px;
-    z-index: -1;
     margin-bottom: 10vh;
     border-width: 0px;
-    height: 3px;
     background-color: #e97837;
+    width: 60vw;
+    max-width: 400px;
+    min-width: 200px;
+    height: 3px;
+    z-index: -1;
 }
 
-.events-section .event-item {
-    display: none;
-    border: solid 0;
-    height: 80vh;
-}
-
-.events-section .event-item img {
+.events .event-item img {
     width: auto;
     border: solid 10px #e6e6e6;
     height: 80vh;
+    max-width: 90vw;
     transition: all 0.4s ease-in-out;
 }
-.events-section .event-item img:hover {
+.events .event-item img:hover {
     transform: scale(1.1);
 }
 
-
-.events-section .event-per-item button {
+.events .event-per-item button {
     background-color: #ffffff;
     color: #505050;
     opacity: 0.6;
@@ -391,7 +388,7 @@ header .nav-links #curr-page {
     cursor: pointer;
     z-index: 99;
 }
-.events-section .event-per-item button:hover {
+.events .event-per-item button:hover {
     background-color: #505050;
     color: white;
     opacity: 1;
@@ -400,21 +397,21 @@ header .nav-links #curr-page {
     padding: 10px;
 }
 
-.events-section #event-button-left {
+.events #event-button-left {
     position: absolute;
     top:  50%;
     left: 10px;
     transform: translateY(-50%);
 }
 
-.events-section #event-button-right {
+.events #event-button-right {
     position: absolute;
     top:  50%;
     right: 10px;
     transform: translateY(-50%);
 }
 
-.events-section .event-per-item #event-counter {
+.events .event-per-item #event-counter {
     font-size: 15px;
     margin: 25px;
 }
@@ -486,6 +483,7 @@ footer #socialmedia-icons a:hover {
 .footer-right {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 50vw;
 }
