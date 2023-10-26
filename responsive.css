@@ -7,20 +7,9 @@
         display: none;
     }
 
-    .wall-top-container .heading {
-        color: #0a70a3;
-    }
-
-    .wall-top-container .ieeelogo-left #body {
-        color: #08547A;
-        border: solid 1px #0a70a3;
-    }
-
+    /* Events */
     .events {
         margin: 10vh 0px;
-    }
-    .events .event-item {
-        display: ;
     }
 
     .events .event-item img {
@@ -28,37 +17,55 @@
         width: 100vw;
         height: auto;
     }
-    footer #socialmedia-icons {
-        width: 100%;
-    }
 
     .events .event-per-item button {
         margin: 20px;
     }
+    
     .events #event-button-left {
         position: static;
         top:  auto;
         margin-top: 20px;
-        
         left: 10px;
-        transform: translateY(-50%);
     }
     
     .events #event-button-right {
         position: static;
         top: auto;
         right: 10px;
-        transform: translateY(-50%);
+    }
+
+    /* Footer */
+    footer .footer-left img {
+        width: 60vw;
+        min-width: 100px;
+    }
+
+    footer #socialmedia-icons {
+        width: 50%;
+        margin: 20px 0;
+    }
+
+    footer .footer-container {
+        display: block;
+        gap: 50px;
+        justify-content: space-around;
+        padding: 50px;
+    }
+    
+    footer .footer-right {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-around;
+        width: 100%;
     }
     
     #tothetop {
         display: none;
-        position: fixed;
-        bottom: 10px;
-        right: 20px;
-        text-decoration: none;
-        color: #222222;
     }
+    
 }
 
 

@@ -444,7 +444,7 @@ footer .footer-container {
     justify-content: center;
 }
 
-footer img {
+footer .footer-left img {
     width: 10vw;
     min-width: 100px;
     cursor: pointer;
@@ -481,7 +481,7 @@ footer #socialmedia-icons a:hover {
 }
 
 /* Navigation Links*/
-.footer-right {
+footer .footer-right {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -490,7 +490,7 @@ footer #socialmedia-icons a:hover {
     width: 50vw;
 }
 
-.footer-right .footer-links a {
+footer .footer-right .footer-links a {
     padding: 8px 0px;
     font-size: 15px;
     text-decoration: none;
