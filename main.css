@@ -13,6 +13,12 @@ html {
     display: block;
 }
 
+/* Disable Blue background on link and button click */
+a, button {
+    -webkit-tap-highlight-color: transparent;
+}
+a:focus, button:focus { outline: none !important;}
+
 
 /** header **/
 header {
@@ -31,7 +37,7 @@ header input[type=checkbox] {
 
 .hamburger {
     display: none;
-    font-size: 24px;
+    font-size: 30px;
     user-select: none;
 }
 #headerfiller {
@@ -41,6 +47,7 @@ header input[type=checkbox] {
 header img {
     width: 12vw;
     min-width: 150px;
+    z-index: 99;
 }
 
 header img:hover {
@@ -401,7 +408,7 @@ header .nav-links #curr-page {
     width: 50px;
     height: 50px;
     border-radius: 100px;
-    box-shadow: 0 0 10px #3b3b3b;
+    box-shadow: 0 0 8px #616161;
     cursor: pointer;
     z-index: 99;
 }
