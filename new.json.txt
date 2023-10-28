@@ -1,0 +1,18 @@
+    const jsonData = {
+      "ClassName": "IEEE-MIET",
+      "event-item1": {
+        "title": "Some title here",
+        "date": "22 Dec 2023",
+        "body": "here is the body of the event"
+      },
+      "event-item2": {
+        "title": "Some another title here",
+        "date": "6 Jan 2024",
+        "body": "here is the body of the event 2"
+      },
+      "event-item3": {
+        "title": "Event 3rd",
+        "date": "8 Jul 2024",
+        "body": "here is the body of the event 3"
+      }
+    };
