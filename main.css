@@ -124,14 +124,11 @@ header .nav-links #curr-page {
     text-align: center;
     position: absolute;
     top: 50%;
-    height: 130px;
-    font-family: 'Nunito', sans-serif;
-    font-size: 100px;
-    font-weight: bold;
+    height: 105px;
     color: #0a70a3;
     -webkit-filter: drop-shadow(0px 0px 15px #b8b8b8);
     filter: drop-shadow(0px 0px 10px #b8b8b8); /* F the background */
-    text-shadow: 0px 0px 10px #b8b8b8;
+    text-shadow: 0px 0px 10px #999999;
     transform: translateY(-50%);
     z-index: 1;
     overflow: hidden;
@@ -152,19 +149,23 @@ header .nav-links #curr-page {
 }
 
 .wall-top-container .ieeelogo-left #head {
-    font-size: 100px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 95px;
 }
 .wall-top-container .ieeelogo-left #body {
     position: relative;
+    /* -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black; */
     display: inline;
-    font-size: 20px;
-    width: calc(100% - 10px); /* Fix border under empty area of 'I' Character in IEEE */
-    margin-left: 10px;
+    font-size: 18px;
+    /* width: calc(100% + 10px); Fix border under empty area of 'I' Character in IEEE */
     top: -15px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
     color: #0a70a3;
     border: solid 1px #0a70a3;
-    border-width: 3px 0 0 0 ;
-    animation: up-to-down 1s;
+    border-width: 2px 0 0 0 ;
 }
 
 /** Dashboard **/
@@ -229,20 +230,28 @@ header .nav-links #curr-page {
 
 /** UpComing Events... **/
 .uc-event-section {
-    display: block;
-    margin: 10vh 50px;
+    display: none;
+    margin: 10vh 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 
-.uc-event-section #heading {
+.uc-event-section > #heading {
+    margin-right: auto;
+    margin-left: 5vw;
     font-size: 30px;
     text-decoration: none;
     font-family: 'Nunito', sans-serif;
+    font-weight: 300;
 }
 .uc-event-section #heading span {
     color: #5db5bb;
 }
 
 .uc-event-section .uc-event-bulk {
+    width: 90vw;
     margin-top: 40px;
 }
 
@@ -277,17 +286,36 @@ header .nav-links #curr-page {
     align-items: center;
 }
 .uc-event-section .uc-event-bulk #head span {
-    margin-left: 20px;
+    margin-left: 15px;
     font-size: 15px;
     color: #727272;
     font-weight: 300;
+}
+.uc-event-section .uc-event-bulk #head span i {
+    margin-right: 5px;
 }
 
 .uc-event-section .uc-event-bulk #body {
     font-size: 18px;
     font-weight: 300;
 }
-
+.uc-event-section .uc-event-bulk #body a {
+    text-decoration: none;
+    color: #0a66c2;
+}
+.uc-event-section .uc-event-bulk #body a:hover {
+    text-decoration: underline;
+    color: #0f87ff;
+}
+.uc-event-section .uc-event-bulk #body i {
+    color: #2e2e2e;
+}
+.uc-event-section .uc-event-bulk #body b {
+    color: #2e2e2e;
+}
+.uc-event-section .uc-event-bulk #body s {
+    color: #2e2e2e;
+}
 
 /** IEEE Tools **/
 .ieee-tools {
@@ -397,7 +425,7 @@ header .nav-links #curr-page {
     transition: all 0.4s ease-in-out;
 }
 .events .event-item img:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .events .event-per-item button {
@@ -416,8 +444,7 @@ header .nav-links #curr-page {
     background-color: #505050;
     color: white;
     opacity: 1;
-    transition: 0.3s ease-in-out;
-    animation: ease-in-out 0.3 ;
+    transition: 0.3s;
     padding: 10px;
 }
 
@@ -440,8 +467,11 @@ header .nav-links #curr-page {
     margin: 25px;
 }
 
-.fade {
-    animation: fade 0.8s;
+.animate-reveal {
+    animation: small-to-big 0.5s;
+}
+@keyframes small-to-big {
+    0% {transform: scale(0.8);}
 }
 
 
@@ -523,8 +553,8 @@ footer .footer-right .footer-links a {
 }
 
 .footer-right .footer-links a:hover {
-    transform: scale(1.15);
-    transition: 0.3s;
+    transform: scale(1.1);
+    transition: 0.2s;
     color: #272727;
 }
 

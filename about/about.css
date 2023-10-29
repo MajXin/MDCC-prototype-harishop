@@ -86,7 +86,10 @@ header {
 
 .global-view {
 	margin: 10vh 0;
-	display: block;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	text-align: center;
 }
 
@@ -94,12 +97,69 @@ header {
 	font-size: 40px;
 	font-family: 'Nunito', sans-serif;
 	font-weight: 300;
+	color: black;
 }
+.global-view p {
+	margin: 20px;
+	font-family: 'Nunito', sans-serif;
+	font-size: 18px;
+	font-weight: 300;
+	max-width: 60vw;
+	color: #5e5e5e;
+}
+
 .global-view #mobile-view {
 	display: none;
 }
 
 .global-view #wide-view {
-	width: 70vw;
+	width: 60vw;
 	padding: 40px 0;
+}
+.global-view .sections-bulk {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.global-view .section-item {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-around;
+	align-items: center;
+	border: solid 1px #ffffff;
+	box-shadow: 0px 0px 5px #fcfcfc;
+	background-color: #fcfcfc;
+	border-radius: 8px;
+	margin: 10vh 0 0 0;
+	width: 80vw;
+	gap: 30px;
+	padding: 20px;
+}
+.global-view .section-item:hover {
+	border-width: 1px;
+	border-color: #000000;
+}
+
+.global-view .section-item p {
+	display: flex;
+	flex-direction: column;
+	width: 50vw;
+	text-align: justify;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	color: #696969;
+}
+.global-view .section-item p span {
+	font-family: 'Nunito', sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+	color: #3f3f3f;
+	padding: 10px 0;
+}
+
+.global-view .section-item img {
+	width: 18vw;
+	min-width: 200px;
 }

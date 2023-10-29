@@ -21,31 +21,57 @@
     </head>
     <body>
         <div class="body-container">
-            <div class="top-full-block">
-                <!-- Navigation -->
-                <header>
-                    <img src="../src/miet.png">
+            <!-- Navigation -->
+            <header>
+                <img src="../src/miet.png">
 
-                    <input type="checkbox" id="checkbox_toggle" />
-                    <label for="checkbox_toggle" class="hamburger"><i class="fas fa-bars"></i></label>
-                    <div id="headerfiller"></div> <!--We will use it to fill the background when viewing in mobile-view mode -->
+                <input type="checkbox" id="checkbox_toggle" />
+                <label for="checkbox_toggle" class="hamburger"><i class="fas fa-bars"></i></label>
+                <div id="headerfiller"></div> <!--We will use it to fill the background when viewing in mobile-view mode -->
 
-                    <nav>
-                        <div class="nav-links">
-                            <a href="../index.html">Home</a>
-                            <a href="../about/about.html">About Us</a>
-                            <a href="../gallery/gallery.html">Gallery</a>
-                            <a id="curr-page" href="./events.html">Events</a>
-                            <a href="../team/team.html">Team</a>
-                            <a href="../contact/contact.html">Contact Us</a>
+                <nav>
+                    <div class="nav-links">
+                        <a href="../index.html">Home</a>
+                        <a href="../about/about.html">About Us</a>
+                        <a href="../gallery/gallery.html">Gallery</a>
+                        <a id="curr-page" href="./events.html">Events</a>
+                        <a href="../team/team.html">Team</a>
+                        <a href="../contact/contact.html">Contact Us</a>
+                    </div>
+                </nav>
+            </header>
 
+            <!-- Google Calendar -->
+            <div class="gc-container">
+                <p id="heading">Events on <span>Google</span> Calendar</p>
+                <p id="loading">Loading your calendar...</p>
+                <iframe id="google-calendar" src="https://calendar.google.com/calendar/embed?src=en.indian%23holiday%40group.v.calendar.google.com&ctz=UTC"></iframe>
+            </div>
+
+
+            <!-- Event Section -->
+            <div class="uc-event-section">
+                <p id="heading">Upcoming <span>Events</span>...</p>
+                <div class="event-per-item">
+                    <div class="uc-event-bulk">
+                        
+                        <div class="uc-event-item">
+                            <p id="head">Event 1<span><i class="fas fa-calendar-alt"></i> 22 Dec</span></p>
+                            <p id="body">
+                                This is the body of this particular event...
+                            </p>
                         </div>
-                    </nav>
-                </header>
 
-                <div class="gc-container">
-                    <iframe id="google-calendar" src="https://calendar.google.com/calendar/embed?src=en.indian%23holiday%40group.v.calendar.google.com&ctz=UTC"></iframe>
+                        <div class="uc-event-item">
+                            <p id="head">Event 2<span><i class="fas fa-calendar-alt"></i> 6 Jan</span></p>
+                            <p id="body">
+                                This is the body of this particular event...
+                        </div>
+                        
+                    </div>
                 </div>
+            </div>
+
 
 
             <!-- Footer -->
@@ -84,8 +110,9 @@
 
                         <div class="footer-links">
                             <p id="heading">Contact INFO</p>
-                                <span>Contact No: +91 94697132</span>
-                                <span>Kot Balwal, Jammu</span>
+                            <span> Phone: +91 90183 12123</span>
+                            <span> Email: ieee@mietjammu.in</span>
+                            <span> Kot Balwal, Jammu | 181122</span>
                         </div>
                     </div>
                 </div>
@@ -98,5 +125,10 @@
             </footer>
 
         </div>
+
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+      
+        <script src="../JS/events.js"></script>
     </body>
 </html>

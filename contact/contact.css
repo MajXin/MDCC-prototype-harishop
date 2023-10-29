@@ -9,6 +9,7 @@
     font-weight: 300;
 }
 
+
 /* Moto of MIET */
 .heading-container {
     overflow: hidden;
@@ -16,11 +17,7 @@
     animation: fade 2s;
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
-    align-content: center;
-    flex-wrap: nowrap;
-    gap: 5vw;
     width: 100vw;
     height: 80vh;
     -webkit-touch-callout: none; /* iOS Safari */
@@ -31,13 +28,44 @@
     user-select: none;
 }
 
-.heading-container p {
+.heading-container #heading {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 100%;
+    left: 2vw;
+    overflow: hidden;
+}
+
+.heading-container #heading p {
+    font-size: 1.6vw;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    color: #aaaaaa;
+    transform: rotate(-90deg);
+    text-wrap: nowrap;
+}
+
+.heading-container #moto {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: nowrap;
+    gap: 5vw;
+}
+
+.heading-container #moto p {
     font-family: 'Tiro Devanagari Hindi', serif;
     font-size: 15vw;
     color: #dfdfdf;
     transition: 1s;
 }
-.heading-container p:hover {
+.heading-container #moto p:hover {
     color: black;
 }
 
