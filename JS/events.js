@@ -69,9 +69,3 @@ var jsonData = snapshot.val();
     }
   }
 });
-
-// Disable image Draging
-const img = document.querySelector('img')
-img.ondragstart = () => {
-  return false;
-};

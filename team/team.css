@@ -1,7 +1,8 @@
 .team-bulk {
     display: block;
-    margin: 0 30px;
+    margin: 0 10vw;
 }
+
 
 .team-bulk #heading {
     animation: animation-spread-out 0.9s;
@@ -39,6 +40,7 @@
     justify-content: space-around;
 }
 
+
 /** Card **/
 .team-bulk .team-container #member {
     display: block;
@@ -58,5 +60,8 @@
     border-radius: 5px;
     width: auto;
     height: auto;
+    min-height: 200px;
+    min-width: 200px;
+    max-height: 200px;
     max-width: 200px;
 }

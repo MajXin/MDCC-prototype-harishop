@@ -1,38 +1,38 @@
-// var touchStartX = 0;
-// var touchEndX = 0;
+var touchStartX = 0;
+var touchEndX = 0;
 
-// document.getElementsByClassName("event-item")[0].addEventListener("touchstart", function(e) {
-//   touchStartX = e.changedTouches[0].clientX;
-// });
+document.getElementsByClassName("event-item")[0].addEventListener("touchstart", function(e) {
+  touchStartX = e.changedTouches[0].clientX;
+});
 
-// document.getElementsByClassName("event-item")[0].addEventListener("touchend", function(e) {
-//   touchEndX = e.changedTouches[0].clientX;
-//   handleSwipe();
-// });
+document.getElementsByClassName("event-item")[0].addEventListener("touchend", function(e) {
+  touchEndX = e.changedTouches[0].clientX;
+  handleSwipe();
+});
 
-// function handleSwipe() {
-//   var threshold = 10;
+function handleSwipe() {
+  var threshold = 10;
 
-//   if (touchStartX - touchEndX > threshold) {
-//     changeEventImg(slideIndex + 1);
-//   } else if (touchEndX - touchStartX > threshold) {
-//     changeEventImg(slideIndex - 1);
-//   }
-// }
+  if (touchStartX - touchEndX > threshold) {
+    changeEventImg(slideIndex + 1);
+  } else if (touchEndX - touchStartX > threshold) {
+    changeEventImg(slideIndex - 1);
+  }
+}
 
 // Add touch event listeners using Hammer.js
-var touchElement = document.querySelector(".event-item");
-var hammer = new Hammer(touchElement);
+// var touchElement = document.querySelector(".event-item");
+// var hammer = new Hammer(touchElement);
 
-hammer.on("swipeleft", function() {
-  // Swipe left to right, move to the previous slide
-  changeEventImg(slideIndex - 1);
-});
+// hammer.on("swipeleft", function() {
+//   // Swipe left to right, move to the previous slide
+//   changeEventImg(slideIndex - 1);
+// });
 
-hammer.on("swiperight", function() {
-  // Swipe right to left, move to the next slide
-  changeEventImg(slideIndex + 1);
-});
+// hammer.on("swiperight", function() {
+//   // Swipe right to left, move to the next slide
+//   changeEventImg(slideIndex + 1);
+// });
 
 function nextEvent(n) {
     changeEventImg(slideIndex += n);

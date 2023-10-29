@@ -60,6 +60,7 @@ header .nav-links {
     flex-direction: row;
     width: calc(100vw - (50vw + 20px)); /*Total width - image width - margin*/
     justify-content: space-between;
+    z-index: 99;
 }
 
 header .nav-links a {
@@ -89,6 +90,14 @@ header .nav-links #curr-page {
 /** Navbar and wallpaper **/
 .top-full-block {
     height: 100vh;
+}
+.top-full-block #link {
+    position: absolute;
+    top: 100%;
+    transform: translateY( calc(-100% - 5px));
+    right: 10px;
+    color: black;
+    font-size: 12px;
 }
 
 
@@ -167,6 +176,8 @@ header .nav-links #curr-page {
     border: solid 1px #0a70a3;
     border-width: 2px 0 0 0 ;
 }
+
+
 
 /** Dashboard **/
 .dashboard {
@@ -423,6 +434,12 @@ header .nav-links #curr-page {
     height: 80vh;
     max-width: 90vw;
     transition: all 0.4s ease-in-out;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
 }
 .events .event-item img:hover {
     transform: scale(1.05);
