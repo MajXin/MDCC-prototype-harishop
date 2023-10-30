@@ -69,6 +69,26 @@
     color: black;
 }
 
+.temp-here {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+    margin: 0 0 10vh 0;
+
+}
+
+
+/* Email */
+
+.emails i{
+    color: aquamarine;
+}
+.emails span {
+    color: #0a70a3;
+}
+
+
 /* Contact */
 .contacts {
     display: block;
@@ -80,7 +100,6 @@
 }
 .contacts p {
     font-family: 'Nunito', sans-serif;
-    margin: 10px;
 }
 .contacts p span {
     color: #0a70a3;
