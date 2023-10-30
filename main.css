@@ -132,7 +132,7 @@ header .nav-links #curr-page {
     flex-direction: row;
     text-align: center;
     position: absolute;
-    top: 50%;
+    top: 30%;
     height: 105px;
     color: #0a70a3;
     -webkit-filter: drop-shadow(0px 0px 15px #b8b8b8);
@@ -176,6 +176,10 @@ header .nav-links #curr-page {
     border: solid 1px #0a70a3;
     border-width: 2px 0 0 0 ;
 }
+.wall-top-container .ieeelogo-left #body span img {
+    width: 30px;
+}
+
 
 
 
