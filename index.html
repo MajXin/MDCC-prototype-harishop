@@ -65,7 +65,7 @@
             <!-- Dashboard -->
             <div class="dashboard">
                 <div id="dashboard-item">
-                    <H1>150</H1>
+                    <H1 id="total"></H1>
                     <p>Members</p>
                 </div>
                 <hr width="20vw">
@@ -80,9 +80,29 @@
             <div class="about-us">
                 <div class="about-us-container">
                     <p id="heading">About IEEE</p>
-                    <p id="content">IEEE is the world's largest professional association advancing innovation and technological excellence for the benefit of humanity. IEEE and its members inspire a global community to innovate for a better tomorrow through its highly-cited publications, conferences, technology standards, and professional and educational activities. IEEE is the trusted "voice" for engineering, computing and technology information around the globe.</p>
+                    <p id="content">
+                        IEEE is the world's largest professional association advancing innovation and technological
+                        excellence for the benefit of humanity. IEEE and its members inspire a global community to
+                        innovate for a better tomorrow through its highly-cited publications, conferences,
+                        technology standards, and professional and educational activities. IEEE is the trusted
+                        "voice" for engineering, computing and technology information around the globe.
+                    </p>
+                    <p id="heading">About MIET</p>
+                    <p id="content">
+                        Model Institute of Engineering and Technology (MIET), established in 1996, holds the distinction
+                        of being the first private engineering college in Jammu and Kashmir, setting a precedent for
+                        private education in the region. As a part of the esteemed MIER Group, which has an impressive
+                        legacy spanning over 85 years, MIET stands as a symbol of excellence and innovation in the field
+                        of higher education.
+                    </p>
+                    <p id="content">
+                        MIET is not only a leader in the realm of engineering but also a champion in fostering technological talent.
+                        We are proud to be the first institution to establish an IEEE Student Branch in Jammu, which has since grown
+                        to become the largest Student Branch in the entire Jammu region. 
+                    </p>
                 </div>
             </div>
+            
 
 
             <!-- Event Section -->
@@ -91,22 +111,11 @@
                 <div class="event-per-item">
                     <div class="uc-event-bulk">
                         
-                        <div class="uc-event-item">
-                            <p id="head">Event 1<span><i class="fas fa-calendar-alt"></i> 22 Dec</span></p>
-                            <p id="body">
-                                This is the body of this particular event...
-                            </p>
-                        </div>
-
-                        <div class="uc-event-item">
-                            <p id="head">Event 2<span><i class="fas fa-calendar-alt"></i> 6 Jan</span></p>
-                            <p id="body">
-                                This is the body of this particular event...
-                        </div>
-                        
                     </div>
                 </div>
             </div>
+
+
 
             <!-- IEEE Tools -->
             <div class="ieee-tools">
@@ -141,6 +150,8 @@
                     </a>
                 </div>
             </div>
+
+
 
 
             <!-- Event Section -->
@@ -187,15 +198,46 @@
 
 
 
+            <!-- Join IEEE -->
+            <div class="join-ieee">
+                <div class="left">
+                    <p id="heading"><span>&nbsp;Read Reviews&nbsp;</span> of Other members.</p>
+                    <div class="review">
+                        <img src="./src/review/student1.jpg">
+                        <h3>Rohit Singh</h3>
+                        <p>It is a pleasure of mine being a part of IEEE.</p>
+                    </div>
+                    <div class="review">
+                        <img src="./src/review/student2.jpg">
+                        <h3>Jagjot Singh</h3>
+                        <p>This is the second review.</p>
+                    </div>
+                    <div class="review">
+                        <img src="./src/review/student2.jpg">
+                        <h3>Manik Sharma</h3>
+                        <p>This is the third review.</p>
+                    </div>
+                </div>
+                
+                <div class="right">
+                    <img src="src/ieee.png">
+                    <p id="heading">Be a part of BIGGER Picture!</p>
+
+                    <a href="https://www.ieee.org/join">Join IEEE</a>
+                </div>
+            </div>
+
+
             <!-- Footer -->
             <footer>
                 <div class="footer-container">
                         <div class="footer-left">
                             <img src="./src/miet-logo.png">
+                            
                             <div id="socialmedia-icons">
                                 <a href="https://www.linkedin.com/ieee_miet"><i class="fab fa-linkedin-in"></i></a>
                                 <a href="https://www.instagram.com/ieee_miet/"><i class="fab fa-instagram"></i></a>
-                                <a href="Mailto:ieeesb@mietjammu.in"><i class="fas fa-inbox"></i></a>
+                                <a href="Mailto:ieeesb@mietjammu.in"><i class="fas fa-envelope"></i></a>
                             </div>
                         </div>
 
@@ -229,8 +271,8 @@
                             <span>MIET (Autonomous)</span>
                             <span>Kot Balwal, </span>
                             <span>Jammu, 181122</span>
-                            <span> Phone: +91 90183 12123</span>
-                            <span> Email: ieee@mietjammu.in</span>
+                            <span style="margin-top: 30px;"><i class="fas fa-phone"></i> +91 90183 12123</span>
+                            <span><i class="fas fa-inbox"></i> ieeesb@mietjammu.in</span>
                         </div>
                     </div>
                 </div>
@@ -241,8 +283,6 @@
                     <a id="tothetop" href="#top"><i class="fas fa-arrow-up"></i>&nbsp To the Top again!</a>
                 </div>
             </footer>
-
-            
         </div>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>

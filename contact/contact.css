@@ -34,9 +34,10 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 20px;
+    text-align: center;
+    width: 130px;
     height: 100%;
-    left: 2vw;
+    left: calc(2vw - 60px);
     overflow: hidden;
 }
 
@@ -46,6 +47,7 @@
     font-weight: 300;
     color: #aaaaaa;
     transform: rotate(-90deg);
+    width: 200px;
     text-wrap: nowrap;
 }
 
@@ -69,41 +71,74 @@
     color: black;
 }
 
-.temp-here {
+
+
+
+
+/* Contact US */
+.contactus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    padding: 0 10vw;
+}
+.contactus #heading i {
+    color: lightcoral;
+}
+.contact-container {
+    color: #272727;
+}
+
+.contact-container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    gap: 100px;
+    justify-content: space-around;
+    width: 100%;
+    margin: 10vh;
+}
+.contact-container p {
+    padding: 5px 0;
+}
+
+.contact-container #heading2 {
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    padding: 10px 0;
+}
+
+/** Contact **/
+.contacts, .emails, .links {
+    display: block;
+    text-align: start;
     margin: 0 0 10vh 0;
-
 }
-
-
-/* Email */
-
-.emails i{
-    color: aquamarine;
-}
-.emails span {
+span {
     color: #0a70a3;
 }
-
 
 /* Contact */
-.contacts {
-    display: block;
-    text-align: center;
-    margin: 0 0 10vh 0;
-}
-.contacts i {
+.contact-container .contacts i {
     color: #0a70a3;
 }
-.contacts p {
+.contact-container .contacts p {
     font-family: 'Nunito', sans-serif;
 }
-.contacts p span {
-    color: #0a70a3;
+
+/* Email */
+.contact-container .emails i{
+    color: cornflowerblue;
 }
+
+/* Links */
+.contact-container .links i {
+    color: hotpink;
+    margin-right: 5px;
+}
+
+
+
 /* Location */
 .location {
     display: block;
@@ -141,3 +176,79 @@
 }
 
 
+
+/* MIET Links */
+.miet-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vh;
+    margin: 20vh 0;
+}
+
+.miet-links-bulk {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.miet-links-bulk a {
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    border: solid 2px;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+/* MIET Website */
+.miet-links-bulk #mietweb {
+    color: #ee3639;
+    border-color: #ee3639;
+}
+.miet-links-bulk #mietweb:hover {
+    color: #ffffff;
+    background-color: #ee3639;
+}
+
+/* LinkedIn */
+.miet-links-bulk #linkedin {
+    color: #0a66c2;
+    border-color: #0a66c2;
+}
+.miet-links-bulk #linkedin:hover {
+    color: #ffffff;
+    background-color: #0a66c2;
+}
+
+/* Facebook */
+.miet-links-bulk #facebook {
+    color: #1877f2;
+    border-color: #1877f2;
+}
+.miet-links-bulk #facebook:hover {
+    color: #ffffff;
+    background-color: #1877f2;
+}
+
+/* Youtube */
+.miet-links-bulk #youtube {
+    color: #ff0000;
+    border-color: #ff0000;
+}
+.miet-links-bulk #youtube:hover {
+    color: #ffffff;
+    background-color: #ff0000;
+}
+
+/* Instagram */
+.miet-links-bulk #instagram {
+    color: #c32aa3;
+    border-color: #c32aa3;
+}
+.miet-links-bulk #instagram:hover {
+    color: #ffffff;
+    background-color: #c32aa3;
+}

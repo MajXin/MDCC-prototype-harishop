@@ -53,6 +53,15 @@
 .team-bulk .team-container #member-container {
     padding: 20px 0;
 }
+.team-bulk .team-container #member-container a i {
+    margin: 20px 8px 20px 0px;
+    color: #bebebe;
+    font-size: 20px;
+}
+.team-bulk .team-container #member-container a i:hover {
+    color: #2c2c2c;
+    transition: 0.2s;
+}
 
 .team-container #member img {
     box-shadow:  #64435d;

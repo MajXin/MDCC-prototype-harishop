@@ -1,3 +1,63 @@
+document.addEventListener("DOMContentLoaded", function () {
+  const reviews = document.querySelectorAll(".review");
+  let currentReviewIndex = 0;
+
+  function showReview(index) {
+      reviews[index].style.display = "block";
+      setTimeout(function () {
+          reviews[index].style.transform = "translateX(0)";
+          reviews[index].style.opacity = 1;
+      }, 100);
+  }
+
+  function hideReview(index) {
+      reviews[index].style.transform = "translateX(-50%)";
+      reviews[index].style.opacity = 0;
+      setTimeout(function () {
+          reviews[index].style.display = "none";
+      }, 1000);
+  }
+
+  function nextReview() {
+      hideReview(currentReviewIndex);
+      currentReviewIndex = (currentReviewIndex + 1) % reviews.length;
+      showReview(currentReviewIndex);
+  }
+
+  showReview(currentReviewIndex);
+
+  setInterval(nextReview, 5000);
+});
+
+let i=0;
+function countAnimation(){
+    document.getElementById("total").innerHTML=i;
+    if (i == 150){
+      clearInterval(interval);
+    }
+    i++
+}
+
+const observer = new IntersectionObserver(handleIntersection, {
+  root: null,
+  rootMargin: "0px",
+  threshold: 1,
+});
+function handleIntersection(entries, observer) {
+  entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const interval = setInterval(countAnimation, 5);
+        observer.unobserve(entry.target);
+      }
+  });
+}
+
+const targetElement = document.getElementById("dashboard-item");
+observer.observe(targetElement);
+
+
+
+
 var touchStartX = 0;
 var touchEndX = 0;
 
