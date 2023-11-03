@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 let i=0;
 function countAnimation(){
-    document.getElementById("total").innerHTML=i;
+    document.getElementById("total").innerHTML=i+'+';
     if (i == 150){
       clearInterval(interval);
     }
