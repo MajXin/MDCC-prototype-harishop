@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   let currentReviewIndex = 0;
 
   function showReview(index) {
-      reviews[index].style.display = "block";
+      reviews[index].style.display = "flex";
       setTimeout(function () {
           reviews[index].style.transform = "translateX(0)";
           reviews[index].style.opacity = 1;

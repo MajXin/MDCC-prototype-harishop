@@ -49,6 +49,7 @@
     transform: rotate(-90deg);
     width: 200px;
     text-wrap: nowrap;
+    z-index: -1;
 }
 
 .heading-container #moto {
@@ -189,6 +190,37 @@ span {
 .miet-links-bulk {
     display: flex;
     flex-direction: row;
+    border: solid 0px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.miet-links-bulk a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+
+.miet-links-bulk a span {
+    display: none;
+    color: white;
+    padding: 0px 5px;
+    animation: left-to-right 0.2s;
+    transition: all 0.5s ease-in-out;
+}
+.miet-links-bulk a:hover span {
+    display: initial;
+}
+
+
+
+
+
+
+/* .miet-links-bulk {
+    display: flex;
+    flex-direction: row;
     gap: 20px;
     flex-wrap: wrap;
 }
@@ -205,50 +237,56 @@ span {
 
 /* MIET Website */
 .miet-links-bulk #mietweb {
+    background-color: #ee3639;
+    border-color: #ee3639;
+}
+/* 
+.miet-links-bulk #mietweb {
     color: #ee3639;
     border-color: #ee3639;
 }
 .miet-links-bulk #mietweb:hover {
     color: #ffffff;
     background-color: #ee3639;
-}
+} */
 
 /* LinkedIn */
 .miet-links-bulk #linkedin {
-    color: #0a66c2;
+    background-color: #0a66c2;
     border-color: #0a66c2;
 }
-.miet-links-bulk #linkedin:hover {
+/* .miet-links-bulk #linkedin:hover {
     color: #ffffff;
     background-color: #0a66c2;
-}
+} */
 
 /* Facebook */
 .miet-links-bulk #facebook {
-    color: #1877f2;
+    background-color: #1877f2;
     border-color: #1877f2;
 }
-.miet-links-bulk #facebook:hover {
+/* .miet-links-bulk #facebook:hover {
     color: #ffffff;
     background-color: #1877f2;
-}
+} */
 
 /* Youtube */
 .miet-links-bulk #youtube {
-    color: #ff0000;
+    background-color: #ff0000;
     border-color: #ff0000;
 }
+/*
 .miet-links-bulk #youtube:hover {
     color: #ffffff;
     background-color: #ff0000;
-}
+} */
 
 /* Instagram */
 .miet-links-bulk #instagram {
-    color: #c32aa3;
+    background-color: #c32aa3;
     border-color: #c32aa3;
 }
-.miet-links-bulk #instagram:hover {
+/* .miet-links-bulk #instagram:hover {
     color: #ffffff;
     background-color: #c32aa3;
-}
+} */
