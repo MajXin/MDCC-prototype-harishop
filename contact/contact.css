@@ -115,7 +115,7 @@
     text-align: start;
     margin: 0 0 10vh 0;
 }
-span {
+.contacts span {
     color: #0a70a3;
 }
 
@@ -187,7 +187,7 @@ span {
     margin: 20vh 0;
 }
 
-.miet-links-bulk {
+/* .miet-links-bulk {
     display: flex;
     flex-direction: row;
     border: solid 0px;
@@ -211,14 +211,14 @@ span {
 }
 .miet-links-bulk a:hover span {
     display: initial;
-}
+} */
 
 
 
 
 
 
-/* .miet-links-bulk {
+.miet-links-bulk {
     display: flex;
     flex-direction: row;
     gap: 20px;
@@ -237,56 +237,51 @@ span {
 
 /* MIET Website */
 .miet-links-bulk #mietweb {
-    background-color: #ee3639;
-    border-color: #ee3639;
-}
-/* 
-.miet-links-bulk #mietweb {
     color: #ee3639;
     border-color: #ee3639;
 }
 .miet-links-bulk #mietweb:hover {
     color: #ffffff;
     background-color: #ee3639;
-} */
+}
 
 /* LinkedIn */
 .miet-links-bulk #linkedin {
-    background-color: #0a66c2;
+    color: #0a66c2;
     border-color: #0a66c2;
 }
-/* .miet-links-bulk #linkedin:hover {
+.miet-links-bulk #linkedin:hover {
     color: #ffffff;
     background-color: #0a66c2;
-} */
+}
 
 /* Facebook */
 .miet-links-bulk #facebook {
-    background-color: #1877f2;
+    color: #1877f2;
     border-color: #1877f2;
 }
-/* .miet-links-bulk #facebook:hover {
+.miet-links-bulk #facebook:hover {
     color: #ffffff;
     background-color: #1877f2;
-} */
+}
 
 /* Youtube */
 .miet-links-bulk #youtube {
-    background-color: #ff0000;
+    color: #ff0000;
     border-color: #ff0000;
 }
-/*
+
 .miet-links-bulk #youtube:hover {
     color: #ffffff;
     background-color: #ff0000;
-} */
+}
 
 /* Instagram */
 .miet-links-bulk #instagram {
-    background-color: #c32aa3;
+    color: #c32aa3;
     border-color: #c32aa3;
 }
-/* .miet-links-bulk #instagram:hover {
+.miet-links-bulk #instagram:hover {
     color: #ffffff;
     background-color: #c32aa3;
-} */
+}
