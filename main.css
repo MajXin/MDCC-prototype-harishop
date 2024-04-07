@@ -46,9 +46,10 @@ header input[type=checkbox] {
 }
 
 header img {
-    width: 12vw;
+    width: 16vw;
     min-width: 150px;
     z-index: 99;
+    padding-top: 30px;
 }
 
 header img:hover {
@@ -61,13 +62,16 @@ header .nav-links {
     width: calc(100vw - (50vw + 20px)); /*Total width - image width - margin*/
     justify-content: space-between;
     z-index: 99;
+    background-color: lightblue;
+    padding: 20px;
+    border-radius: 15px;
 }
 
 header .nav-links a {
     text-wrap: nowrap;
     text-decoration: none;
     /* color: rgb(39, 39, 39); */
-    color: #201e1e;
+    color: #FF7722;
     padding: 5px 5px;
     font-size: 14px;
 }
@@ -76,12 +80,13 @@ header .nav-links a:hover {
     transition: 0.3s;
     text-decoration: underline;
     text-underline-offset: 5px;
+    
 }
 
 /* Current page */
 header .nav-links #curr-page {
     text-decoration: underline;
-    color: black;
+    color: #FF7722;
     text-underline-offset: 5px;
     padding: 5px 5px;
 }
@@ -96,7 +101,7 @@ header .nav-links #curr-page {
     top: 100%;
     transform: translateY( calc(-100% - 5px));
     right: 10px;
-    color: black;
+    color: #FF7722;
     font-size: 12px;
 }
 
@@ -117,6 +122,7 @@ header .nav-links #curr-page {
     -moz-user-select: none; /* Old versions of Firefox */
     -ms-user-select: none; /* Internet Explorer/Edge */
     user-select: none;
+    
 }
 
 .wall-top-container #wall-top {
@@ -172,7 +178,7 @@ header .nav-links #curr-page {
     top: -15px;
     font-family: 'Lato', sans-serif;
     font-weight: 700;
-    color: #FF7722;
+    color: purple;
     border: solid 1px #FF7722;
     border-width: 2px 0 0 0 ;
 }

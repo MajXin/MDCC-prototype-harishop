@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
 let i=0;
 function countAnimation(){
     document.getElementById("total").innerHTML=i+'+';
-    if (i == 150){
+    if (i == 50){
       clearInterval(interval);
     }
     i++
@@ -80,19 +80,6 @@ function handleSwipe() {
   }
 }
 
-// Add touch event listeners using Hammer.js
-// var touchElement = document.querySelector(".event-item");
-// var hammer = new Hammer(touchElement);
-
-// hammer.on("swipeleft", function() {
-//   // Swipe left to right, move to the previous slide
-//   changeEventImg(slideIndex - 1);
-// });
-
-// hammer.on("swiperight", function() {
-//   // Swipe right to left, move to the next slide
-//   changeEventImg(slideIndex + 1);
-// });
 
 function nextEvent(n) {
     changeEventImg(slideIndex += n);
