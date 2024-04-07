@@ -64,7 +64,7 @@
 
 .heading-container #moto p {
     font-family: 'Tiro Devanagari Hindi', serif;
-    font-size: 15vw;
+    font-size: 12vw;
     color: #dfdfdf;
     transition: 1s;
 }
@@ -116,12 +116,12 @@
     margin: 0 0 10vh 0;
 }
 .contacts span {
-    color: #0a70a3;
+    color: #FF7722;
 }
 
 /* Contact */
 .contact-container .contacts i {
-    color: #0a70a3;
+    color: #FF7722;
 }
 .contact-container .contacts p {
     font-family: 'Nunito', sans-serif;
@@ -187,33 +187,6 @@
     margin: 20vh 0;
 }
 
-/* .miet-links-bulk {
-    display: flex;
-    flex-direction: row;
-    border: solid 0px;
-    border-radius: 20px;
-    overflow: hidden;
-}
-
-.miet-links-bulk a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    font-size: 20px;
-}
-
-.miet-links-bulk a span {
-    display: none;
-    color: white;
-    padding: 0px 5px;
-    animation: left-to-right 0.2s;
-    transition: all 0.5s ease-in-out;
-}
-.miet-links-bulk a:hover span {
-    display: initial;
-} */
-
-
 
 
 
@@ -247,22 +220,22 @@
 
 /* LinkedIn */
 .miet-links-bulk #linkedin {
-    color: #0a66c2;
-    border-color: #0a66c2;
+    color: #c2820a;
+    border-color: #c2820a;
 }
 .miet-links-bulk #linkedin:hover {
     color: #ffffff;
-    background-color: #0a66c2;
+    background-color: #c2820a;
 }
 
 /* Facebook */
 .miet-links-bulk #facebook {
-    color: #1877f2;
-    border-color: #1877f2;
+    color: #c2820a;
+    border-color: #c2820a;
 }
 .miet-links-bulk #facebook:hover {
     color: #ffffff;
-    background-color: #1877f2;
+    background-color: #c2820a;
 }
 
 /* Youtube */

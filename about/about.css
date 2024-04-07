@@ -14,7 +14,7 @@ header {
 	font-family: 'Nunito', sans-serif;
     font-size: 30px;
     font-weight: 300;
-	color: #0a70a3;
+	color: #FF7722;
 }
 .about-us #heading1 span {
 	display: inline;
@@ -33,7 +33,7 @@ header {
 }
 
 .about-us span {
-	color: #0a70a3;
+	color: #FF7722;
 }
 
 /** Benifits **/
@@ -53,7 +53,7 @@ header {
 .benifits p span {
     font-family: 'Nunito', sans-serif;
 	font-weight: 300;
-	border: solid 2px #0a70a3;
+	border: solid 2px #FF7722;
 	margin: 0px;
 	padding: 0px;
 	border-width: 0 0 2px 0;
@@ -70,7 +70,7 @@ header {
 
 .benifits .benifits-container #head {
 	font-size: 30px;
-	color: #0a70a3;
+	color: #FF7722;
 }
 
 .benifits .benifits-container #body {
