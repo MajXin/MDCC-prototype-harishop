@@ -46,7 +46,7 @@ header input[type=checkbox] {
 }
 
 header img {
-    width: 16vw;
+    width: 1vw;
     min-width: 150px;
     z-index: 99;
     padding-top: 30px;
@@ -73,7 +73,7 @@ header .nav-links a {
     /* color: rgb(39, 39, 39); */
     color: #FF7722;
     padding: 5px 5px;
-    font-size: 14px;
+    font-size: 20px;
 }
 header .nav-links a:hover {
     animation: animate-underline 0.3s;
@@ -139,7 +139,7 @@ header .nav-links #curr-page {
     text-align: center;
     position: absolute;
     top: 40%;
-    height: 105px;
+    height: 150px;
     color: #FF7722;
     -webkit-filter: drop-shadow(0px 0px 15px #b8b8b8);
     filter: drop-shadow(0px 0px 10px #b8b8b8); /* F the background */
@@ -173,7 +173,7 @@ header .nav-links #curr-page {
     /* -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black; */
     display: inline;
-    font-size: 18px;
+    font-size: 25px;
     /* width: calc(100% + 10px); Fix border under empty area of 'I' Character in IEEE */
     top: -15px;
     font-family: 'Lato', sans-serif;
@@ -183,10 +183,12 @@ header .nav-links #curr-page {
     border-width: 2px 0 0 0 ;
 }
 .wall-top-container .ieeelogo-left #body span img {
-    width: 35px;
+    width: 70px;
 }
 
-
+.gallerybg{
+    background-image: linear-gradient(to top, red, orange);
+}
 /** Dashboard **/
 .dashboard {
     min-height: 30vh;
