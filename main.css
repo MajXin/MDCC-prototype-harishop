@@ -64,14 +64,15 @@ header .nav-links {
     z-index: 99;
     background-color: lightblue;
     padding: 20px;
-    border-radius: 15px;
+    border-radius: 30px;
+    background: linear-gradient(to right ,#9c1010 ,#0c8d82 ); 
 }
 
 header .nav-links a {
     text-wrap: nowrap;
     text-decoration: none;
     /* color: rgb(39, 39, 39); */
-    color: #FF7722;
+    color: #FFFFFF;
     padding: 5px 5px;
     font-size: 20px;
 }
@@ -86,7 +87,7 @@ header .nav-links a:hover {
 /* Current page */
 header .nav-links #curr-page {
     text-decoration: underline;
-    color: #FF7722;
+    color: lightgreen;
     text-underline-offset: 5px;
     padding: 5px 5px;
 }

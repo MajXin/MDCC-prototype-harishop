@@ -28,7 +28,32 @@ button {
   color: white;
   cursor: pointer;
 }
-
+.b2{
+  position: fixed;
+  top: 1vw;
+  left: 1vw;
+  z-index: 5;
+  background: none;
+  border: 0;
+  outline: none;
+  color: white;
+  cursor: pointer;
+}
+.pop{
+  display: inline-block;
+  font-size: 25px;
+  background: linear-gradient(to right ,#9c1010 ,#0c8d82 );
+  border-radius: 30px;
+  padding: 10px;
+  
+}
+ .pop:hover{
+  animation: animate-underline 0.3s;
+  transition: 0.3s;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  
+}
 body {
   background: #131520;
   overflow: hidden;
