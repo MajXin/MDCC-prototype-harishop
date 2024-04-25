@@ -50,6 +50,7 @@
     width: 200px;
     text-wrap: nowrap;
     z-index: -1;
+    margin-right: 30px;
 }
 
 .heading-container #moto {
@@ -59,7 +60,7 @@
     justify-content: center;
     text-align: center;
     flex-wrap: nowrap;
-    gap: 5vw;
+    gap: 4vw;
 }
 
 .heading-container #moto p {

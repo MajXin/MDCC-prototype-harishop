@@ -83,7 +83,10 @@ header .nav-links a:hover {
     text-underline-offset: 5px;
     
 }
-
+.lokgeetp{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 /* Current page */
 header .nav-links #curr-page {
     text-decoration: underline;
@@ -788,3 +791,4 @@ footer .footer-end #meetdev {
     75% {color: #A233B8;}
     100% {color: #64435d;}
 }
+
